@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Light-Gapped Transfer Tool</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="read_code">Scan Files</string>
+    <string name="send_code">Send Files</string>
+    <string name="title_activity_data__reading_">File Reader</string>
+    <string name="title_activity_data_reading">File Reader</string>
+    <string name="read_results">Manage Scanned Files</string>
+    <string name="help">How It Works</string>
+    <string name="title_activity_scanner">Scanner</string>
+    <string name="title_activity_reader">Reader</string>
+    <string name="title_activity_sender">Sender</string>
+    <string name="title_activity_send_chooser">Choose File</string>
+    <string name="title_activity_how_it_works">How It Works</string>
+</resources>

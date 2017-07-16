@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="cmsc435.light_gappedtransfertool.SenderActivity">
+
+    <TextView
+        android:id="@+id/qrLabel"
+        android:text=""
+        android:paddingTop="4dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/imageView"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text="Encode"
+            android:background="@drawable/scan_stop_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onEncodePressed"
+            android:id="@+id/encodeButton" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text="Pause"
+            android:background="@drawable/scan_stop_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onPausePressed"
+            android:id="@+id/pauseButton" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resume"
+            android:background="@drawable/scan_stop_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onResumePressed"
+            android:id="@+id/resumeButton" />
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:text="Previous"
+            android:background="@drawable/scan_stop_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onPreviousPressed"
+            android:id="@+id/previousButton" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:id="@+id/editText" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:background="@drawable/scan_stop_button_background"
+            android:textColor="@android:color/white"
+            android:onClick="onNextPressed"
+            android:id="@+id/nextButton" />
+    </LinearLayout>
+</LinearLayout>
