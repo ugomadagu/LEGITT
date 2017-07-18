@@ -70,9 +70,7 @@ public class SendChooserActivity extends ActionBarActivity {
     private void chooseFile(File file) {
         if (file != null) {
             if(file.isDirectory()){
-                path = file;
-                textField.setText(path.getAbsolutePath());
-                initialize(path);
+                initialize(file);
             } else {
                 File compressedFile = compressFile(file);
                 Intent intent = new Intent(this, SenderActivity.class);
